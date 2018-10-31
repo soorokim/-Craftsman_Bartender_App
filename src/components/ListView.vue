@@ -13,49 +13,44 @@ export default {
   name: 'list-view',
   data () {
     return {
-      cocktails: [
-        {"name":"Pusse Cafe"},
-        {"name":"Manhattan"},
-        {"name" : "Dry Martini"},
-        {"name" : "Old Fashioned"},
-        {"name" : "Brandy Alexander"},
-        {"name" : "Bloody Mary"},
-        {"name" : "Singapore Sling"},
-        {"name" : "Balck Russian"},
-        {"name" : "Margarita"},
-        {"name" : "Rusty Nail"},
-        {"name" : "Wiskey Sour"},
-        {"name" : "New York"},
-        {"name" : "Harvey Wallbanger"},
-        {"name" : "Daiquiry"},
-        {"name" : "Kiss of Fire"},
-        {"name" : "B-52"},
-        {"name" : "June Bug"},
-        {"name" : "Bacardi Cocktail"},
-        {"name" : "Sloe Gin Fizz"},
-        {"name" : "Cuba Libre"},
-        {"name" : "Grasshopper"},
-        {"name" : "Seabreeze"},
-        {"name" : "Apple Martini"},
-        {"name" : "Negroni"},
-        {"name" : "Long lsland Iced Tea"},
-        {"name" : "Sidecar"},
-        {"name" : "Mai-Tai"},
-        {"name" : "Pina Colada"},
-        {"name" : "CosmopolitanCocktail"},
-        {"name" : "Moscow Mule"},
-        {"name" : "Apricot Cocktail"},
-        {"name" : "Honeymoon Cocktail"},
-        {"name" : "Blue Hawaian"},
-        {"name" : "Kir"},
-        {"name" : "Tequila Sunrise"},
-        {"name" : "Healing(힐링)"},
-        {"name" : "Jindo(진도)"},
-        {"name" : "Puppy Love(풋사랑)"},
-        {"name" : "Geumsan(금산)"},
-        {"name" : "Gochang(고창)"}
-      ],
-      msg: 'Welcome to Your list-view App'
+      cocktails: [],
+      bottom: false
+    }
+  },
+  methods: {
+    bottomVisble:function(){
+      //수직 방향으로 스크롤되는 픽셀수치
+      var scrollY = window.pageYOffset;
+      //눈에 보이는 만큼의 높이
+      var visible = document.documentElement.clientHeight;
+      //스크롤 시키지 않았을때의 전체높이
+      var pageHeight = document.documentElement.scrollHeight;
+      //스크로된 픽셀과 눈에보이는 만큼의 높이가 문서 전체 높이보다 크거나 같은지 체크
+      var bottomOfPage = visible + scrollY >= pageHeight;
+      return bottomOfPage || pageHeight < visble;
+    },
+    addList:function(){
+      //json파일에서 칵테일 목록을 가져와서 cocktails에 넣어준다.
+      axios.get('/data/cocktail_list.json').then(function(response){
+        this.cocktails.push(response.cocktails);
+        if(this.bottomVisble()){
+          this.addList();
+        }
+      })
+    }
+  },
+  created: function(){
+    window.addEventListener('scroll',()=>{
+      this.bottom = this.bottomVisible();
+    });
+
+    this.addList();
+  },
+  watch: {
+    bottom: function(bottom) {
+      if(bottom){
+        this.addList();
+      }
     }
   }
 }
