@@ -1,122 +1,286 @@
 [
   {
-    "name":"Pusse Cafe"
+    "id" : 0,
+    "name":"Pusse Cafe",
+    "glass" : "Stemed Liqueur Glass",
+    "base" : "Brandy",
+    "technique" : "Float"
+
+
   },
   {
-    "name":"Manhattan"
+    "id" : 1,
+    "name":"Manhattan",
+    "glass" : "Cocktail Glass",
+    "base" : "Whiskey",
+    "technique" : "Stir"
   },
   {
-    "name" : "Dry Martini"
+    "id" : 2,
+    "name" : "Dry Martini",
+    "glass" : "Cocktail Glass",
+    "base" : "Gin",
+    "technique" : "Stir"
   },
   {
-    "name" : "Old Fashioned"
+    "id" : 3,
+    "name" : "Old Fashioned",
+    "glass" : "Old Fashioned Glass",
+    "base" : "Whiskey",
+    "technique" : "Build"
+
   },
   {
-    "name" : "Brandy Alexander"
+    "id" : 4,
+    "name" : "Brandy Alexander",
+    "glass" : "Cocktail Glass",
+    "base" : "Brandy",
+    "technique" : "Shake"
   },
   {
-    "name" : "Bloody Mary"
+    "id" : 5,
+    "name" : "Bloody Mary",
+    "glass" : "Highball Glass",
+    "base" : "Vodka",
+    "technique" : "Build"
   },
   {
-    "name" : "Singapore Sling"
+    "id" : 6,
+    "name" : "Singapore Sling",
+    "glass" : "Footed Pilsner Glass",
+    "base" : "Gin",
+    "technique" : "Shake/Build"
   },
   {
-    "name" : "Balck Russian"
+    "id" : 7,
+    "name" : "Balck Russian",
+    "glass" : "Old Fashioned Glass",
+    "base" : "Vodka",
+    "technique" : "Build"
+
   },
   {
-    "name" : "Margarita"
+    "id" : 8,
+    "name" : "Margarita",
+    "glass" : "Cocktail Glass",
+    "base" : "Tequila",
+    "technique" : "Shake"
   },
   {
-    "name" : "Rusty Nail"
+    "id" : 9,
+    "name" : "Rusty Nail",
+    "glass" : "Old Fashioned Glass",
+    "base" : "Whiskey",
+    "technique" : "Build"
   },
   {
-    "name" : "Wiskey Sour"
+    "id" : 10,
+    "name" : "Wiskey Sour",
+    "glass" : "Sour Glass",
+    "base" : "Whiskey",
+    "technique" : "Shake/Build"
   },
   {
-    "name" : "New York"
+    "id" : 11,
+    "name" : "New York",
+    "glass" : "Cocktail Glass",
+    "base" : "Whiskey",
+    "technique" : "Shake"
   },
   {
-    "name" : "Harvey Wallbanger"
+    "id" : 12,
+    "name" : "Harvey Wallbanger",
+    "glass" : "Collins Glass",
+    "base" : "Vodka",
+    "technique" : "Build/Float"
   },
   {
-    "name" : "Daiquiry"
+    "id" : 13,
+    "name" : "Daiquiry",
+    "glass" : "Cocktail Glass",
+    "base" : "Rum",
+    "technique" : "Shake"
   },
   {
-    "name" : "Kiss of Fire"
+    "id" : 14,
+    "name" : "Kiss of Fire",
+    "glass" : "Cocktail Glass",
+    "base" : "Vodka",
+    "technique" : "Shake"
   },
   {
-    "name" : "B-52"
+    "id" : 15,
+    "name" : "B-52",
+    "glass" : "Sherry Glass(2oz)",
+    "base" : "Liqueur",
+    "technique" : "Shake"
   },
   {
-    "name" : "June Bug"
+    "id" : 16,
+    "name" : "June Bug",
+    "glass" : "Collins Glass",
+    "base" : "Liqueur",
+    "technique" : "Shake"
   },
   {
-    "name" : "Bacardi Cocktail"
+    "id" : 17,
+    "name" : "Bacardi Cocktail",
+    "glass" : "Cocktail Glass",
+    "base" : "Rum",
+    "technique" : "Shake"
   },
   {
-    "name" : "Sloe Gin Fizz"
+    "id" : 18,
+    "name" : "Sloe Gin Fizz",
+    "glass" : "Highball Glass",
+    "base" : "Liqueur",
+    "technique" : "Shake/Build"
   },
   {
-    "name" : "Cuba Libre"
+    "id" : 19,
+    "name" : "Cuba Libre",
+    "glass" : "Highball Glass",
+    "base" : "Rum",
+    "technique" : "Build"
   },
   {
-    "name" : "Grasshopper"
+    "id" : 20,
+    "name" : "Grasshopper",
+    "glass" : "Champagne Glass(saucer 형)",
+    "base" : "Liqueur",
+    "technique" : "Build"
   },
   {
-    "name" : "Seabreeze"
+    "id" : 21,
+    "name" : "Seabreeze",
+    "glass" : "Highball Glass",
+    "base" : "Vodka",
+    "technique" : "Build"
   },
   {
-    "name" : "Apple Martini"
+    "id" : 22,
+    "name" : "Apple Martini",
+    "glass" : "Cocktail Glass",
+    "base" : "Vodka",
+    "technique" : "Shake"
   },
   {
-    "name" : "Negroni"
+    "id" : 23,
+    "name" : "Negroni",
+    "glass" : "Old Fashioned Glass",
+    "base" : "Gin",
+    "technique" : "Build"
   },
   {
-    "name" : "Long lsland Iced Tea"
+    "id" : 24,
+    "name" : "Long lsland Iced Tea",
+    "glass" : "Collins Glass",
+    "base" : "Vodka",
+    "technique" : "Build"
   },
   {
-    "name" : "Sidecar"
+    "id" : 25,
+    "name" : "Sidecar",
+    "glass" : "Cocktail Glass",
+    "base" : "Brandy",
+    "technique" : "Shake"
   },
   {
-    "name" : "Mai-Tai"
+    "id" : 26,
+    "name" : "Mai-Tai",
+    "glass" : "Footed Pilsner Glass",
+    "base" : "Rum",
+    "technique" : "Blend"
   },
   {
-    "name" : "Pina Colada"
+    "id" : 27,
+    "name" : "Pina Colada",
+    "glass" : "Footed Pilsner Glass",
+    "base" : "Rum",
+    "technique" : "Blend"
   },
   {
-    "name" : "CosmopolitanCocktail"
+    "id" : 28,
+    "name" : "CosmopolitanCocktail",
+    "glass" : "Cocktail Glass",
+    "base" : "Vodka",
+    "technique" : "Shake"
   },
   {
-    "name" : "Moscow Mule"
+    "id" : 29,
+    "name" : "Moscow Mule",
+    "glass" : "Highball Glass",
+    "base" : "Vodka",
+    "technique" : "Build"
   },
   {
-    "name" : "Apricot Cocktail"
+    "id" : 30,
+    "name" : "Apricot Cocktail",
+    "glass" : "Cocktail Glass",
+    "base" : "Liqueur",
+    "technique" : "Shake"
   },
   {
-    "name" : "Honeymoon Cocktail"
+    "id" : 31,
+    "name" : "Honeymoon Cocktail",
+    "glass" : "Cocktail Glass",
+    "base" : "Brandy",
+    "technique" : "Shake"
   },
   {
-    "name" : "Blue Hawaian"
+    "id" : 32,
+    "name" : "Blue Hawaian",
+    "glass" : "Footed Pilsner Glass",
+    "base" : "Rum",
+    "technique" : "Blend"
   },
   {
-    "name" : "Kir"
+    "id" : 33,
+    "name" : "Kir",
+    "glass" : "White Wine Glass",
+    "base" : "Wine",
+    "technique" : "Build"
   },
   {
-    "name" : "Tequila Sunrise"
+    "id" : 34,
+    "name" : "Tequila Sunrise",
+    "glass" : "Footed Pilsner Glass",
+    "base" : "Tequila",
+    "technique" : "Build/Float"
   },
   {
-    "name" : "Healing(힐링)"
+    "id" : 35,
+    "name" : "Healing(힐링)",
+    "glass" : "Cocktail Glass",
+    "base" : "traditional",
+    "technique" : "Shake"
   },
   {
-    "name" : "Jindo(진도)"
+    "id" : 36,
+    "name" : "Jindo(진도)",
+    "glass" : "Cocktail Glass",
+    "base" : "traditional",
+    "technique" : "Shake"
   },
   {
-    "name" : "Puppy Love(풋사랑)"
+    "id" : 37,
+    "name" : "Puppy Love(풋사랑)",
+    "glass" : "Cocktail Glass",
+    "base" : "traditional",
+    "technique" : "Shake"
   },
   {
-    "name" : "Geumsan(금산)"
+    "id" : 38,
+    "name" : "Geumsan(금산)",
+    "glass" : "Cocktail Glass",
+    "base" : "traditional",
+    "technique" : "Shake"
   },
   {
-    "name" : "Gochang(고창)"
+    "id" : 39,
+    "name" : "Gochang(고창)",
+    "glass" : "Flute Champagne Glass",
+    "base" : "traditional",
+    "technique" : "Stir"
   }
 ]
